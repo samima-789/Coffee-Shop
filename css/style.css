@@ -264,6 +264,7 @@ section{
 
 
 .menu .box-container .box .price{
+    font-size: 15px;
 	text-decoration: none;
 	color: #fff;
 }
@@ -272,7 +273,7 @@ section{
 	text-decoration: none;
 	color: #543a2a;
 	border: 1px solid #543a2a;
-	padding: 15px;
+	padding: 7px;
 	border-radius: 5px;
 }
 
@@ -294,10 +295,12 @@ section{
 }
 
 .menu .box-container .box .content h3{
-	color: #D35400;
+	color: #543a2a;
+    font-size: 20px;
 }
 
 .menu .box-container .box .content p{
+    font-size: 12px;
 	color: #ABB2B9;
 	padding: 1rem 0;
 }
@@ -546,6 +549,7 @@ section{
     color:#fff;
     border:var(--border);
     font-size: 2rem;
+    border-radius: 10px;
 }
 
 .footer .links a:hover{
