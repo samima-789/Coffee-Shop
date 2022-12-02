@@ -176,7 +176,7 @@ section{
 .home .content h3{
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: #d3ad7f;
+    color: #fff;
 }
 
 .home .content h1{
@@ -321,8 +321,13 @@ section{
 
 .products .box-container .box{
     text-align: center;
-    border:var(--border);
+    border:1px solid #543a2a;
     padding: 2rem;
+    box-shadow: 2px 2px 10px #543a2a;
+}
+
+.products .box-container .box:hover{
+    background-color: #fff;
 }
 
 .products .box-container .box .icons a{
@@ -330,13 +335,18 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    border:var(--border);
-    color:#fff;
+    border:1px solid #543a2a;
+    color:#543a2a;
+    border-radius: 50px;
     margin:.3rem;
 }
 
+
+
 .products .box-container .box .icons a:hover{
-    background:var(--main-color);
+    background-color: #543a2a;
+    color: #fff;
+    transform: rotate(360deg);
 }
 
 .products .box-container .box .image{
@@ -348,7 +358,7 @@ section{
 }
 
 .products .box-container .box .content h3{
-    color:#fff;
+    color: #543a2a;
     font-size: 2.5rem;
 }
 
@@ -362,15 +372,10 @@ section{
 }
 
 .products .box-container .box .content .price{
-    color:#fff;
+    color:#543a2a;
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
 
 .review .box-container{
     display: grid;
