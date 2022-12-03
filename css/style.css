@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-:root{
-    --main-color:#d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
-    --border:.1rem solid #ffffff4d;
-}
-
 *{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border:none;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
@@ -23,8 +16,6 @@ html{
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
-
-
 
 body{
     background: #010103;
@@ -69,6 +60,7 @@ section{
                inset 6em 3.5em 0 0 #fff;
 }
 
+/*----------------------------------------------------Header section start--------------------------------------*/
 .header{
     background: #010103;
     display: flex;
@@ -157,9 +149,11 @@ section{
 .header .search label:hover{
     color: grey;
 }
+/*----------------------------------------------------Header section end--------------------------------------*/
 
 
 
+/*----------------------------------------------------Home section start--------------------------------------*/
 .home{
     min-height: 100vh;
     display: flex;
@@ -194,7 +188,12 @@ section{
     color: #eee;
     margin-bottom: 20px;
 }
+/*----------------------------------------------------Home section end--------------------------------------*/
 
+
+
+
+/*----------------------------------------------------About section start--------------------------------------*/
 .about .row{
     display: flex;
     align-items: center;
@@ -244,7 +243,12 @@ section{
     background-color: #fff;
     transform: rotate(360deg);
 }
+/*----------------------------------------------------About section end--------------------------------------*/
 
+
+
+
+/*----------------------------------------------------Menu section start--------------------------------------*/
 .menu .box-container{
 	display: flex;
     flex-wrap: wrap;
@@ -262,7 +266,6 @@ section{
      cursor: pointer;
      border-radius: .5rem;      
 }
-
 
 .menu .box-container .box .price{
     font-size: 15px;
@@ -282,7 +285,6 @@ section{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	
 }
 
 .menu .box-container .box .content{
@@ -313,7 +315,12 @@ section{
 .menu .box-container .box:hover .imgs{
 	transform: translateX(100%);
 }
+/*----------------------------------------------------Menu section end--------------------------------------*/
 
+
+
+
+/*----------------------------------------------------New product section start--------------------------------------*/
 .products .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -375,8 +382,12 @@ section{
     color:#543a2a;
     font-size: 2.5rem;
 }
+/*----------------------------------------------------New product section end--------------------------------------*/
 
 
+
+
+/*----------------------------------------------------Special offer section start--------------------------------------*/
 .offer .box-container{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -445,8 +456,12 @@ section{
 .offer .box-container .box:hover > *{
 	color: #fff;
 }
+/*----------------------------------------------------Special offer section end--------------------------------------*/
 
 
+
+
+/*----------------------------------------------------Review section start--------------------------------------*/
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -491,8 +506,12 @@ section{
     font-size: 1.5rem;
     color: #d3ad7f;
 }
+/*----------------------------------------------------Review section end--------------------------------------*/
 
 
+
+
+/*----------------------------------------------------Blog section start--------------------------------------*/
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -549,8 +568,13 @@ section{
     padding:1rem 0;
     margin-bottom: 20px;
 }
+/*----------------------------------------------------Blog section end--------------------------------------*/
 
 
+
+
+
+/*----------------------------------------------------Contact section start--------------------------------------*/
 .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -598,9 +622,13 @@ section{
     text-transform: none;
     background:none;
 }
+/*----------------------------------------------------Contact section end--------------------------------------*/
 
 
 
+
+
+/*----------------------------------------------------Footer section start--------------------------------------*/
 .footer{
     text-align: center;
 }
@@ -658,6 +686,7 @@ section{
     color:#543a2a;
     font-weight: 400;
 }
+/*----------------------------------------------------Footer section end--------------------------------------*/
 
 
 
@@ -670,8 +699,7 @@ section{
 
 
 
-
-/* media queries  */
+/*------------------------------------------------- media queries start -------------------------------------------------*/
 @media (max-width:991px){
 
     html{
@@ -707,7 +735,7 @@ section{
     }
 
     .header .navbar a{
-        color:var(--black);
+        color: #543a2a;
         display: block;
         margin:1.5rem;
         padding:.5rem;
@@ -742,3 +770,4 @@ section{
     }
 
 }
+/*---------------------------------------------------- media quary end--------------------------------------*/
