@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-:root{
-    --main-color:#d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
-    --border:.1rem solid #ffffff4d;
-}
-
 *{
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
@@ -151,7 +142,7 @@ section{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color:var(--black);
+    color: #000;
 }
 
 .header .search label:hover{
@@ -321,7 +312,7 @@ section{
 
 .products .box-container .box{
     text-align: center;
-    border:var(--border);
+    border: ;
     padding: 2rem;
 }
 
@@ -330,13 +321,13 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    border:var(--border);
+    border: ;
     color:#fff;
     margin:.3rem;
 }
 
 .products .box-container .box .icons a:hover{
-    background:var(--main-color);
+    background: ;
 }
 
 .products .box-container .box .image{
@@ -358,7 +349,7 @@ section{
 
 .products .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: var(--main-color);
+    color: ;
 }
 
 .products .box-container .box .content .price{
@@ -379,7 +370,7 @@ section{
 }
 
 .review .box-container .box{
-    border:var(--border);
+    border: ;
     text-align: center;
     padding:3rem 2rem;
 }
@@ -406,12 +397,12 @@ section{
 
 .review .box-container .box .stars i{
     font-size: 1.5rem;
-    color:var(--main-color);
+    color: ;
 }
 
 .contact .row{
     display: flex;
-    background:var(--black);
+    background: ;
     flex-wrap: wrap;
     gap:1rem;
 }
@@ -439,8 +430,8 @@ section{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background:var(--bg);
-    border:var(--border);
+    background: ;
+    border: ;
 }
 
 .contact .row form .inputBox span{
@@ -465,7 +456,7 @@ section{
 }
 
 .blogs .box-container .box{
-    border:var(--border);    
+    border: ;    
 }
 
 .blogs .box-container .box .image{
@@ -495,11 +486,11 @@ section{
 }
 
 .blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
+    color: ;
 }
 
 .blogs .box-container .box .content span{
-    color:var(--main-color);
+    color: ;
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
@@ -513,7 +504,7 @@ section{
 }
 
 .footer{
-    background:var(--black);
+    background: #000;
     text-align: center;
 }
 
@@ -527,13 +518,13 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     color:#fff;
-    border:var(--border);
+    border: ;
     margin:.3rem;
     border-radius: 50%;
 }
 
 .footer .share a:hover{
-    background-color: var(--main-color);
+    background-color: ;
 }
 
 .footer .links{
@@ -547,13 +538,13 @@ section{
 .footer .links a{
     padding:.7rem 2rem;
     color:#fff;
-    border:var(--border);
+    border: ;
     font-size: 2rem;
     border-radius: 10px;
 }
 
 .footer .links a:hover{
-    background:var(--main-color);
+    background: ;
 }
 
 .footer .credit{
@@ -564,7 +555,7 @@ section{
 }
 
 .footer .credit span{
-    color:var(--main-color);
+    color: ;
 }
 
 
