@@ -253,7 +253,7 @@ section{
 	display: flex;
     flex-wrap: wrap;
     gap:2rem;
-    padding: 50px;
+    padding: 54px;
 }
 
 .menu .box-container .box{
@@ -390,7 +390,7 @@ section{
 /*----------------------------------------------------Special offer section start--------------------------------------*/
 .offer .box-container{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
 	gap: 2rem;
 }
 
