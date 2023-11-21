@@ -48,7 +48,7 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
 
             </div>
@@ -218,7 +218,7 @@
 <!------------------------------------------------ New products section starts ------------------------------------------->
 <section class="products" id="products">
 
-    <h1 class="heading"> New <span>products</span> </h1>
+    <h1 class="heading" style="max-width: 500px;"> New <span>products</span> </h1>
 
     <div class="box-container">
 
@@ -299,7 +299,7 @@
 
 <!------------------------------------------------------- Special offer section start --------------------------------------->
 <section class="offer" id="offer">
-	<h1 class="heading">Special <span>offer</span></h1>
+	<h1 class="heading" style="max-width: 500px;">Special <span>offer</span></h1>
 
 	<div class="box-container">
 		<div class="box">
@@ -354,7 +354,7 @@
 <!----------------------------------------------------- review section starts  --------------------------------------------->
 <section class="review" id="review">
 
-    <h1 class="heading"> customer's <span>review</span> </h1>
+    <h1 class="heading" style="max-width: 605px;"> customer's <span>review</span> </h1>
 
     <div class="box-container">
 
@@ -411,7 +411,7 @@
 <!----------------------------------------------------- Blog section start -------------------------------------------------->
 <section class="blogs" id="blogs">
 
-    <h1 class="heading"> our <span>blogs</span> </h1>
+    <h1 class="heading" style="max-width: 430px;"> our <span>blogs</span> </h1>
 
     <div class="box-container">
 
@@ -460,45 +460,6 @@
 
 
 
-<!------------------------------------------------------ contact section starts  ----------------------------------------->
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <div class="row">
-
-       <img src="images/contact.jpg">
-
-        <form action="">
-            <h3>get in touch</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
-            </div>
-            <div class="inputBox">
-                <span class="fa-solid fa-lock"></span>
-                <input type="password" placeholder="password">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
-
-    </div>
-
-</section>
-<!-------------------------------------------------- contact section ends ------------------------------------------------------->
-
-
-
-
-
 <!-------------------------------------------------- footer section starts  ----------------------------------------------------->
 <section class="footer">
 
@@ -531,18 +492,6 @@
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script type="text/javascript">
-            const header = document.querySelector("header");
-            window.addEventListener ("scroll", function(){
-	        header.classList.toggle ("sticky", window.scrollY > 0)
-            });
-
-            $(document).ready(function(){
-                $(".navigation .navbar .logo-toggle-container .toggle-box").click(function(){
-                    $(".navigation .menu").slideToggle();
-                });
-            });
-     </script>
 
 </body>
 </html>

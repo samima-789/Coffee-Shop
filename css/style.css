@@ -23,21 +23,50 @@ body{
 
 section{
     padding:2rem 4%;
+    margin-bottom: 30px;
 }
 
 .sticky{
-    background-color: rgba(84, 58, 42, 0.7);
+    background-color: rgba(84, 58, 42, 0.5);
+    height: 90px;
 }
 
 .heading{
     text-align: center;
     color:#fff;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
     font-size: 4rem;
+    max-width: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: -2;
+}
+
+.heading::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #543a2a;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    z-index: -2;
 }
 
 .heading span{
+    background-color: #000;
     color:#543a2a;
     text-transform: uppercase;
 }
@@ -68,7 +97,9 @@ section{
 .header{
     padding: 0px 4%;
     position: fixed;
-    top:0; left: 0; right: 0;
+    top: 0;
+    left: 0; 
+    right: 0;
     z-index: 1000;
     
 }
@@ -80,25 +111,31 @@ section{
 
 .navigation .navbar{
     position: relative;
+    padding: 10px;
 }
 
 .navigation .navbar .logo-toggle-container{
     position: absolute;
     left: 45%;
-    top: 5px;
     transform: translateX(-50%);
 }
 
 .navigation .navbar .logo-toggle-container .logo{
     display: block;
     position: absolute;
-    top: 30px;
+    top: 20px;
     text-decoration: none;
-    font-size: 25px;
     color: #fff;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: fantasy;
     line-height: 25px;
     letter-spacing: 1px;
+}
+
+.navigation .navbar .logo-toggle-container .logo span{
+    font-family: fantasy;
+    color: #543a2a;
 }
 
 
@@ -116,7 +153,6 @@ section{
     padding: 8px 15px;
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
     letter-spacing: 1px;
     font-size: 16px;
 }
@@ -133,7 +169,6 @@ section{
   }
   
   .dropdown .dropbtn { 
-    font-weight: 600;
     letter-spacing: 1px;
     font-size: 16px;
     border: none;
@@ -223,6 +258,7 @@ section{
     background:url(../images/coffee-wallpaper-21010323363143.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .home .content{
@@ -230,7 +266,9 @@ section{
     height: 250px;
     padding: 25px;
     border-radius: 30px;
-    background-color: rgba(84, 58, 42, 0.7);
+    background-color: rgba(84, 58, 42, 0.5);
+    position: absolute;
+    top: 170px;
 }
 
 .home .content h3{
@@ -290,6 +328,10 @@ section{
     color:#ccc;
     padding:1rem 0;
     line-height: 1.8;
+}
+
+.about .icons{
+    
 }
 
 .about .icons div{
@@ -641,6 +683,11 @@ section{
 
 
 /*----------------------------------------------------Contact section start--------------------------------------*/
+#contact{
+    margin-top: 10%;
+    margin-bottom: 0 !important;
+}
+
 .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -796,6 +843,10 @@ section{
 
 @media screen and (max-width:767px){
 
+    html{
+        font-size: 50%;
+    }
+
     #menu-btn{
         display: inline-block;
     }
@@ -807,8 +858,14 @@ section{
         text-align: center;
     }
 
+    .home .content{
+        max-width: 500px;
+        height: auto;
+         background-color: rgba(84, 58, 42, 0.7);
+    }
+
     .home .content h3{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .home .content p{
@@ -876,12 +933,18 @@ section{
         text-align: center;
     }
 
+    .home .content{
+        max-width: 400px;
+        height: auto;
+         background-color: rgba(84, 58, 42, 0.8);
+    }
+
     .home .content h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .home .content p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
 }
