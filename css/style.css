@@ -702,126 +702,123 @@ header .menu{
 
 
 /*----------------------------------------------------Review section start--------------------------------------*/
-.site{
+
+.review{
+    min-height: 100vh;
+    background: url(../images/review-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-attachment: fixed;
+    padding: 30px;
+    position: relative;
+}
+
+.review::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 145vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.review #content{
+    z-index: 2;
+}
+
+.slider-container{
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
-.review{
-    max-width: 1100px;
-    width: 100%;
-    padding: 0 30px;
-    margin: 0 auto;
-}
 
-.test1{
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.test1 .head{
-    text-align: center;
-    margin-bottom: 60px;
-
-}
-
-.test1 .head h3{
-    font-size: 34px;
-    font-weight: 800;
-}
-
-.test1 .wrapper{
+.slider-images{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 60px;
-    padding: 30px 0;
+    gap: 21px;
 }
 
-.test1 .thumbnail{
-    width: 150px;
-    height: 150px;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.test1 .thumbnail img{
-    object-fit: cover;
+.slider-images img{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-.test1 .thumbnail::before{
-    content: '';
+.slider-img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 235px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height: 315px;
+}
+
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+    height: 420px;
+}
+
+.slider-images .details{
+    width: 100%;
+    height: 50%;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: calc(100% + 30px);
-    height: calc(100% + 10px);
-    background-color: #CA8E46;
-    border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
-    z-index: -1;
-    box-shadow: 1px 2px 3px grey;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.test1 .aside{
-    position: relative;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-grid;
+.slider-images .details h2{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: #CA8E46;
+    display: none;
 }
 
-.test1 .aside > p{
-    position: relative;
+.slider-images .details h4{
     font-size: 14px;
-    line-height:  normal;
-    margin-bottom: 30px;
+    display: none;
+    text-align: left;
+    color: #ABB2B9;
 }
 
-.test1 .aside > p::before,
-.test1 .aside > p::before{
-    font-family: sans-serif;
-    font-size: 80px;
-    font-weight: 800;
-    line-height:  1;
-    position: absolute;
-    color: red;
-    height: 48px;
-    z-index: -1;
+.slider-images .details p{
+    display: none;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: left;
+    color: #fff;
+    margin-top: 10px;
 }
 
-.test1 .aside > p::before{
-    content: open-quote;
-    top: -48px;
-    left: 10px;
-}
-
-.test1 .aside > p::after{
-    content: close-quote;
-    right: 0;
-}
-
-.test1 .aside .name{
-    position: relative;
-    width: fit-content;
-    line-height: 1;
-}
-
-.test1 .aside .name h4{
-    font-size: 22px;
-    font-weight: 800;
-    color: blue;
-    opacity: .8;
-}
-
-.test1 .aside .name p{
-    font-size: 12px;
+.slider-images .details i{
     text-align: right;
+    color: #CA8E46;
 }
+
+.slider-img.active{
+    width: 436px !important;
+    height: 420px !important;
+}
+
+.slider-img.active .details p, .slider-img.active .details h2, .slider-img.active .details h4{
+    display: block;
+}
+
 /*----------------------------------------------------Review section end--------------------------------------*/
 
 

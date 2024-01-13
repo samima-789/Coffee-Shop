@@ -36,6 +36,10 @@
 		width: 200px;
 		height: 200px;
 	}
+
+	.test1 :is(.swiper-button-next, .swiper-button-prev){
+		top: 50%;
+    }
 }
 
 
