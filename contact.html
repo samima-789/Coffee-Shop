@@ -9,87 +9,81 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+     <!-- Font family link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
 
-    <!-------------------------------------------- header section starts  ----------------------------------------------------->
-<header class="header sticky">
-
-    <div class="navigation">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo-toggle-container">
-                    <a href="#" class="logo">COFFEE    
-                    <br>
-                    <span>TOFFEE</span></a>
-                    <span class="toggle-box">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
-                </div>
-
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown">
-                          <button class="dropbtn">Pages
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                        <div class="dropdown-content">
-                            <a href="#">About Us</a>
-                            <a href="#">FAQ</a>
-                            <a href="#">Menu</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-     </div>
-
-    <!--<a href="#" class="logo">Coffee</a>-->
-
-    <!--<div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fa-regular fa-heart"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
+<!-------------------------------------------- header section starts  ----------------------------------------------------->
+<header class="sticky">
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo"><h1>K<span>O</span>FI</h1></div>
+    <div class="search-box">
+        <form action="">
+            <input type="text" name="search" id="srch" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
     </div>
 
-    <div class="search">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>-->
-
-    <!--<nav class="navbar">
-        <a href="#review">review</a>
-        <a href="#blogs">blogs</a>
-        <a href="#contacts">contacts</a>
-    </nav>-->
-
-    
-
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+                      <button class="dropbtn">Pages
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="social-icon">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            
+        </li>
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
 </header>
 <!---------------------------------------------- header section ends ---------------------------------------------------------->
-    
-    <section class="contact" id="contact">
+    <section id="contact-bg">
+            <div class="container">
+                <div class="contact-part">
+                    <div class="breadcrumb">
+                        <h1>Contact Us</h1>
+                        <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                        <span>  //   </span>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <h1 class="heading" style="max-width: 440px"> <span>contact</span> us </h1>
+
+
+
+    <section class="contact" id="contact">
 
     <div class="row">
 
        <img src="images/contact.jpg">
 
         <form action="">
-            <h3>get in touch</h3>
+            <h3>Contact Us</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="text" placeholder="name">
@@ -115,7 +109,7 @@
 
 <!-------------------------------------------------- footer section starts  ----------------------------------------------------->
 <section class="footer">
-
+ <div class="footer-sec">
     <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
@@ -137,7 +131,7 @@
     </div>
 
     <div class="credit">created by <span>Mr. Chef</span> | all rights reserved</div>
-
+</div>
 </section>
 <!---------------------------------------------------- footer section ends ------------------------------------------------>
 <!-- custom js file link  -->

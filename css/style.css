@@ -504,7 +504,7 @@ header .menu{
 /*----------------------------------------------------Special offer section start--------------------------------------*/
 .special-offer{
     min-height: 100vh;
-    background: url(../images/menu7.jpeg);
+    background: url(../images/special-offer.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -879,10 +879,62 @@ header .menu{
 
 
 
-/*----------------------------------------------------Contact section start--------------------------------------*/
+/*--===========================================Contact Page start================================================--*/
+#contact-bg{
+    background: url(../images/coffee-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.breadcrumb{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#contact-bg h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #CA8E46;
+    font-family: 'Mrs Saint Delafield', cursive;
+    letter-spacing: 5px;
+    
+}
+
+.breadcrumb a{
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.breadcrumb a:hover{
+    color: #CA8E46;
+}
+
+.breadcrumb a i{
+    font-size: 13px;
+    color: #CA8E46;
+}
+
+.breadcrumb span{
+    font-size: 17px;
+    color: #fff ;
+    font-weight: 900;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #contact{
     margin-top: 10%;
-    margin-bottom: 0 !important;
 }
 
 .contact .row{
@@ -893,20 +945,22 @@ header .menu{
 
 .contact .row img{
     flex:1 1 45rem;
-    width: 50%;
+    width: 45%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .contact .row form{
     flex:1 1 45rem;
-    padding:5rem 2rem;
+    padding:1rem 1rem;
     text-align: center;
 }
 
 .contact .row form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
-    color:#fff;
+    color: #CA8E46;
+    font-family: "Courgette", cursive;
 }
 
 .contact .row form .inputBox{
@@ -915,11 +969,11 @@ header .menu{
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid #543a2a;
+    border: 1px solid #CA8E46;
 }
 
 .contact .row form .inputBox span{
-    color:#543a2a;
+    color: #CA8E46;
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -941,6 +995,15 @@ header .menu{
 /*----------------------------------------------------Footer section start--------------------------------------*/
 .footer{
     text-align: center;
+    margin-bottom: 0 ;
+    background: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-sec{
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .footer .share{
