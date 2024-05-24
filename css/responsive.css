@@ -249,3 +249,19 @@
 		width: 100%;
 	}
 }
+@media(max-width:480px){
+	.dropdown-content {
+        min-width: 115px;
+        left: 80px;
+        top: 30px;
+    }
+	.story-part-2{
+		margin-top: 100px;
+	}
+	.special-day img {
+		width: 250px;
+	}
+	#content{
+		margin-top: 50px;
+	}
+}
