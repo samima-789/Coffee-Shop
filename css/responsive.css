@@ -1,198 +1,3 @@
-/*
-@media (min-width: 1281px) {
-	
-  }
-  
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-	
-	
-	
-  }
-  
-  
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-	html{
-        font-size: 55%;
-    }
-
-    .home{
-        margin-top: 30px;
-        background-position: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .header{
-        padding:1.5rem 2rem;
-    }
-
-    dropdown-content {
-        min-width: 100px;
-        min-height: 98px;
-        right: 20px;
-        top: 100px;
-	}
-    section{
-        padding:2rem;
-    }
-
-    .navigation .menu{
-        display: block;
-        height: auto !important;
-    }
-	
-	.search-box button{
-		position: absolute;
-	}
-
-	header ul{
-		position: fixed;
-		top: 100px;
-		right: -100%;
-		background: rgba(0,0,0,0.8);
-		height: calc(100vh - 100px);
-		width: 50%;
-		flex-direction: column;
-		align-items: center;
-		transition: 0.5s linear;
-	}
-
-	header .menu{
-		display: block;
-		width: 100px;
-		text-align: center;
-	}
-
-	#chk1:checked ~ ul{
-		right: 0;
-	}
-	
-  }
-  
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	html{
-        font-size: 50%;
-    }
-
-    .dropdown-content {
-        min-width: 100px;
-        min-height: 98px;
-        right: 20px;
-        top: 100px;
-    }
-
-	.search-box button{
-		position: absolute;
-	}
-
-	header ul{
-		position: fixed;
-		top: 100px;
-		right: -100%;
-		background: rgba(0,0,0,0.8);
-		height: calc(100vh - 100px);
-		width: 50%;
-		flex-direction: column;
-		align-items: center;
-		transition: 0.5s linear;
-	}
-
-	header .menu{
-		display: block;
-		width: 100px;
-		text-align: center;
-	}
-
-	#chk1:checked ~ ul{
-		right: 0;
-	}
-
-    .home{
-        margin-top: 30px;
-        background-position: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home .content{
-        width: 100%;
-        height: 100vh;
-        top: 100px;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .home .content h3{
-        font-size: 4rem;
-    }
-
-    .home .content p{
-        font-size: 1.5rem;
-    }
-	
-	.test1 .wrapper{
-		flex-direction: row;
-		padding: 30px 100px;
-	}
-
-	.test1 .thumbnail{
-		width: 200px;
-		height: 200px;
-	}
-
-	.test1 :is(.swiper-button-next, .swiper-button-prev){
-		top: 50%;
-    }
-	
-  }
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-	
-	header .logo{
-		font-size: 10px;
-		margin-left: 8px;
-	}
-
-	header	ul{
-		width: 100%;
-	}
-	
-  }
-  
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-	
-	html{
-        font-size: 50%;
-    }
-
-    .dropdown-content {
-        min-width: 100px;
-        min-height: 98px;
-        right: 100px;
-        top: 100px;
-	}
-    .home{
-        margin-top: 30px;
-        background-position: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home .content h3{
-        font-size: 3.5rem;
-    }
-
-    .home .content p{
-        font-size: 1.5rem;
-    }
-	
-  }
-
-*/
-
 
 @media(max-width:1000px){
 	.search-box button{
@@ -223,6 +28,46 @@
 }
 
 @media screen and (min-width: 768px){
+	.slider-images{
+        gap: 10px;
+    }
+
+    .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+        width: 25px;
+        height: 25px;
+    }
+    .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+        width: 60px;
+        height: 60px;
+    }
+    
+    .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider-images .details{
+        height: 80%;
+    }
+
+    .slider-images .details h2{
+        font-size: 10px;
+    }
+    
+    .slider-images .details h4{
+        font-size: 5px;
+    }
+    
+    .slider-images .details i{
+        margin-top: 0;
+        font-size: 5px;
+        padding: 0;
+    }
+
+    .slider-img.active{
+        width: 100px !important;
+        height: 100px !important;
+    }
 	.test1 .wrapper{
 		flex-direction: row;
 		padding: 30px 100px;
@@ -236,6 +81,10 @@
 	.test1 :is(.swiper-button-next, .swiper-button-prev){
 		top: 50%;
     }
+
+	.according{
+		width: 100%;
+	}
 }
 
 
@@ -264,4 +113,10 @@
 	#content{
 		margin-top: 50px;
 	}
+	.according{
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+	}
+	
 }
