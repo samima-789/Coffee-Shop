@@ -81,11 +81,8 @@
 	.test1 :is(.swiper-button-next, .swiper-button-prev){
 		top: 50%;
     }
-
-	.according{
-		width: 100%;
-	}
 }
+	
 
 
 @media(max-width:600px){
@@ -114,9 +111,19 @@
 		margin-top: 50px;
 	}
 	.according{
-		width: 100%;
+		
 		padding: 10px;
 		margin: 0;
+	}
+	.reservation .row form{
+		margin: 0;
+		width: 100%;
+	}
+	.box .content p{
+		display: none;
+	}
+	.box .content{
+		top: -140%;
 	}
 	
 }

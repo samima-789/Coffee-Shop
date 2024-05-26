@@ -137,7 +137,7 @@ section{
 
 #heading{
     text-align: center;
-    height: 250px;
+    margin-bottom: 50px;
 }
 
 #heading h3{
@@ -539,6 +539,7 @@ header .menu{
     height: 100%;
 	text-align: center;
 	background: #010103;
+    background-size: cover;
 	color: #fff;
 	padding: 30px;
     position: absolute;
@@ -547,7 +548,6 @@ header .menu{
 }
 
 .box .content h3{
-    margin-top: 20px;
 	color: #CA8E46;
     font-size: 20px;
 }
@@ -555,7 +555,7 @@ header .menu{
 .box .content p{
     font-size: 12px;
 	color: #ABB2B9;
-    padding: 8px;
+    
 }
 
 .box .content .price{
@@ -1044,7 +1044,6 @@ header .menu{
 .according{
     margin: 0 auto;
     width: 768px;
-    padding: 64px;
 }
 .according-item{
     border-bottom: 1px solid #fff;
@@ -1066,16 +1065,62 @@ header .menu{
 }
 .according-content p{
     font-size: 14px;
+    font-weight: 100;
     padding-bottom: 20px;
-    color: #fff;
+    color: #ABB2B9;
+    letter-spacing: 1.5px;
+    line-height: 20px;
 }
 .according-button{
     display: flex !important;
     justify-content: space-between !important;
 }
+.rotate{
+    transition: .5s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
 
 
+/*--================================= Reservation Page start =============================================--*/
 
+.reservation .row form{
+    margin: 0 auto;
+    width: 768px;
+    padding:1rem 1rem;
+    text-align: center;
+}
+
+.reservation .row form .inputBox{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #CA8E46;
+    background: transparent;
+}
+
+.reservation .row form .inputBox span{
+    color: #CA8E46;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.reservation .row form .inputBox input{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:transparent;
+    position: relative;
+}
+.reservation .row form .inputBox input:focus~ {
+   background: transparent;
+}
 /*----------------------------------------------------Footer section start--------------------------------------*/
 .footer{
     text-align: center;
