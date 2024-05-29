@@ -153,3 +153,13 @@ $(document).ready(function(){
 });
 
 
+
+/*-- Counter Up Section --*/
+$(document).ready(function(){
+   if ($(".counter").length > 0) {
+     $('.counter').counterUp({
+       delay:10,
+       time:1200,
+     });
+   }
+ });
