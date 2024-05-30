@@ -220,6 +220,9 @@ a{
     padding: 5%;
     color: #fff;
 }
+.about-details img{
+    margin-bottom: 20px;
+}
 .about-details h3{
     font-size: 18px;
     font-weight: 700;
@@ -263,7 +266,6 @@ a{
     transition: all 0.3s ease 0s;
     width: 100%;
 }
-
 .text-tablecell {
     height: auto;
     left: 50%;
@@ -273,18 +275,15 @@ a{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
 .text-tablecell>h3 {
     color: #ffffff;
     font-family: "Courgette", cursive;
     font-size: 20px;
     line-height: 36px;
 }
-
 .text-tablecell>img {
     margin-bottom: 20px;
 }
-
 .image-hover-text {
     height: 100%;
     left: 0;
@@ -294,12 +293,11 @@ a{
     width: 100%;
     z-index: 2;
 }
-
 .image-wrapper:hover:after {
     background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
 }
 
-/*------------------- 11.0 - Counter Up Section Start -------------------*/
+/*---- Counter Up Section Start ----*/
 .counter-up {
     background: url(../images/about/counter-bg.jpg) no-repeat;
     min-height: 50vh;
@@ -367,6 +365,11 @@ a{
     font-weight: 400;
 }
 
+
+.choose-us video{
+    width: 100%;
+    object-fit: cover;
+}
 /*--==================================== Blog Single Page start ===============================--*/
 .blog-single{
     text-align: justify;
@@ -1548,7 +1551,7 @@ header .menu{
 /*----------------------------------------------------Footer section end--------------------------------------*/
 
 
-
+/*--======================================= Gallery Page Start ===========================================-*/
 .album .responsive-container-block {
     min-height: 75px;
     height: fit-content;
