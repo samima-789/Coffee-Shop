@@ -364,11 +364,80 @@ a{
     color: #fff;
     font-weight: 400;
 }
-
-
 .choose-us video{
     width: 100%;
     object-fit: cover;
+}
+
+.our-team-details{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.our-team-details h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #CA8E46;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.our-team{
+    background: url(../images/about/our-team-bg.jpg) no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.our-team::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+.our-team .our-team-card{
+    position: relative;
+    z-index: 2;
+}
+.our-team-card{
+    border: 2px solid #aaaaaa;
+    padding: 10px;
+}
+.our-team-card .our-team-card-img img{
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #aaaaaa;
+    border-top: 2px solid #aaaaaa;
+    border-radius: 50%;
+}
+.our-team-card .our-team-card-content{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.our-team-card .our-team-card-content .team-member-name p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #CA8E46;
+    letter-spacing: 1px;
+}
+.our-team-card .our-team-card-content .team-member-designation p{
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.our-team-card .our-team-card-content .team-member-social-links a i{
+    font-size: 20px;
+    color: #CA8E46;
+    padding: 8px;
 }
 /*--==================================== Blog Single Page start ===============================--*/
 .blog-single{
