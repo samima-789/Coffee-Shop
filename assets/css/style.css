@@ -194,25 +194,18 @@ a{
     z-index: -1;
 }
 .breadcrumb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.breadcrumb-text{
-    width: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-.breadcrumb-text h1{
-    font-size: 35px;
+.breadcrumb h1{
+    font-size: 45px;
     font-weight: 700;
-    text-transform: uppercase;
     color: #fff;
-    letter-spacing: 3px;
-    line-height: 50px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /*---=================================== About Us Page Start ================================--*/
@@ -409,6 +402,13 @@ a{
     border: 2px solid #aaaaaa;
     padding: 10px;
 }
+.our-team-card:hover{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #aaaaaa;
+}
+.our-team-card .our-team-card-img img:hover{
+    box-shadow: 1px 1px 10px 1px #aaaaaa;
+}
 .our-team-card .our-team-card-img img{
     width: 150px;
     margin: 0 auto;
@@ -437,7 +437,14 @@ a{
 .our-team-card .our-team-card-content .team-member-social-links a i{
     font-size: 20px;
     color: #CA8E46;
-    padding: 8px;
+    padding: .9rem 1.1rem;
+    border-radius: 50%;
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    transition: .4s;
+}
+.our-team-card .our-team-card-content .team-member-social-links a i:hover{
+    transform: rotate(360deg);
 }
 /*--==================================== Blog Single Page start ===============================--*/
 .blog-single{
