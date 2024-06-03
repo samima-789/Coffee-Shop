@@ -1019,10 +1019,10 @@ header .menu{
 
 /*----------------------------------------------------Team Member section start--------------------------------------*/
 
-.team-member{
+#section-drinks-menu{
     width: 100%;
     min-height: 100vh;
-    background: url(../images/review-bg.jpg);
+    background: url(../images/menu-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1032,117 +1032,123 @@ header .menu{
     position: relative;
 }
 
-.team-member::before{
+#section-drinks-menu::before{
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     height: 160vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.team-member #content{
     background: rgba(0, 0, 0, 0.7);
-    margin: auto;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    
 }
 
-.slider-container{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+.menu-item{
+  color: #ffffff;
+  display:table;
+  width:100%;
+  padding-bottom: 5px;
+  margin-bottom:5px;
+  border-bottom: solid 1px rgba(255, 255, 255, .1);
+  position: relative;
 }
 
 
-.slider-images{
-    display: flex;
-    align-items: center;
-    gap: 21px;
+.menu-item.thead{
+  font-weight:bold;
+  border: none;
 }
 
-.slider-images img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
+.menu-item.thead .c1{
+  position: relative;
+  font-size:20px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
 }
 
-.slider-img{
-    width: 110px;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.7s ease;
+.menu-item.thead .c1:after{
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  top: 14px;
+  margin-left: 10px;
+  width: 30px;
 }
 
-.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
-    height: 200px;
-}
-.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
-    height: 285px;
+.text-light .menu-item .c1{
+    color:#fff
 }
 
-.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
-    height: 390px;
-}
+.menu-item .c1,.c2,.c3{
+    display:table-cell;
+    width:auto;
+ }
+.menu-item .c1{
+  width:60%;
+  font-size: 14px;
+ }
 
-.slider-images .details{
-    width: 100%;
-    height: 35%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
+ .menu-item .c1 i{
+  font-size: 16px;
+  margin-left: 10px;
+  color: #CA8E46;
+ }
+ 
+ .menu-item .c1 span{
+   padding:2px 4px 2px 5px;
+   color:#fff;
+   margin-left:10px;
+   text-transform:uppercase;
+   letter-spacing:2px;
+   font-weight:bold;
+   font-size: 10px;
+   background-color: #CA8E46;
+ }
 
-.slider-images .details h2{
-    font-size: 28px;
-    font-weight: 800;
-    text-align: left;
+ .menu-item .c2 .cur{
     color: #CA8E46;
-    display: none;
-}
-
-.slider-images .details h4{
-    font-size: 14px;
-    display: none;
-    text-align: left;
-    color: #fff;
-}
-
-.slider-images .details i{
-    margin-top: 20px;
-    color: #ABB2B9;
-    padding: 5px;
-    font-size: 20px;
-    display: none;
-    transition: 0.7s ease;
-}
-
-.slider-images .details i:hover{
-    transform: scale(1.3) rotate(360deg);
+ }
+ .menu-item .c3 .cur{
     color: #CA8E46;
+ }
+ 
+ 
+ .menu-item.desc{
+ margin-bottom:5px;
+ }
+ 
+.menu-item .c1 span.disc{
+margin-right:10px;
+text-transform:uppercase;
+color:#fff;
+padding:2px 5px 2px 10px;
+}
+ 
+.menu-item.thead .c2, .menu-item.thead .c3{
+  font-size:16px;
+  font-weight:600;
 }
 
-.slider-img.active{
-    width: 390px !important;
-    height: 400px !important;
+.menu-item .c2, .menu-item .c3{    
+    white-space: nowrap;
+    width:20%;
+  text-align:center;
+  line-height:1.5em;
+  font-size:18px;
 }
-.slider-img.active .details i{
-    display: inline-block;
+ 
+.menu-item.thead .c2 span, .menu-item.thead .c3 span{
+display:block;
+ padding-right:10px;
+ font-size:12px;
+ }
+
+.menu-item .c2 span,
+.menu-item .c3 span{
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
 }
 
-.slider-img.active .details h2, .slider-img.active .details h4{
-    display: block;
-}
 
 /*----------------------------------------------------Team Member section end--------------------------------------*/
 
