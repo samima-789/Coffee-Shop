@@ -25,7 +25,6 @@ body{
 }
 
 section{
-    padding:2rem 4%;
     margin-bottom: 100px;
 }
 
@@ -537,7 +536,7 @@ i{
     cursor: pointer;
 }
 
-header .logo{
+ .logo{
     flex: 1;
     color: #fff;
     margin-left: 80px;
@@ -546,7 +545,7 @@ header .logo{
     font-weight: 800;
 }
 
-header .logo span{
+ .logo span{
     color: #CA8E46;
     font-size: 40px;
     font-weight: 800;
@@ -1073,6 +1072,12 @@ header .menu{
   margin-left: 10px;
   width: 30px;
 }
+.menu-item.thead .c2 span{
+    color: #CA8E46;
+}
+.menu-item.thead .c3 span{
+    color: #CA8E46;
+}
 
 .text-light .menu-item .c1{
     color:#fff
@@ -1084,7 +1089,7 @@ header .menu{
  }
 .menu-item .c1{
   width:60%;
-  font-size: 14px;
+  font-size: 15px;
  }
 
  .menu-item .c1 i{
@@ -1153,7 +1158,7 @@ display:block;
 /*----------------------------------------------------Team Member section end--------------------------------------*/
 
 
-/*---------------------------------------------------- Review section start ---------------------------------------*/
+/*---------------------------------------------------- Chef section start ---------------------------------------*/
 .testimonial{
     border: 1px solid grey;
     text-align: center;
@@ -1188,9 +1193,9 @@ display:block;
 }
 
 .testimonial .details i{
-    font-size: 15px;
+    font-size: 20px;
     color: #CA8E46;
-    padding: 3px;
+    padding: 5px;
 }
 
 .testimonial .details p{
@@ -1199,7 +1204,7 @@ display:block;
     font-size: 13px;
     margin-top: 10px;
 }
-/*---------------------------------------------------- Review section end -----------------------------------------*/
+/*---------------------------------------------------- Chef section end -----------------------------------------*/
 
 
 /*---------------------------------------------------- Others section start ---------------------------------------*/
@@ -1262,6 +1267,147 @@ display:block;
 }
 
 /*---------------------------------------------------- Others section ends ----------------------------------------*/
+/*---------------------------------------------------- Review Section Start ----------------------------------------------*/
+.button-group-wrap{
+    text-align: center;
+    margin: 30px auto;
+}
+.button-group-wrap ul li{
+    width: 200px;
+    list-style: none;
+    padding: 12px 5px;
+    display: inline-block;
+    border: 1px solid #CA8E46;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.button-group-wrap ul li span{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #CA8E46;
+}
+.button-group-wrap ul li img{
+    width: 18px;
+    height: 18px;
+}
+.button-group-wrap ul li:hover, .button-group-wrap ul li:active{
+    background-color: #CA8E46;
+    color: #fff;
+}
+.item-wrap{
+    padding: 10px;
+}
+.item-wrap-details{
+    width: 100%;
+}
+.item-wrap-details .item-wrap-content{
+    background: rgba(255, 255, 255, .1);
+    padding: 20px;
+}
+.item-wrap-details .item-wrap-content .content-identity{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+}
+.item-wrap-details .item-wrap-content .content-identity img{
+    width: 50px;
+}
+.item-wrap-details .item-wrap-content .content-identity h4{
+    color: #fff;
+    padding: 5px;
+}
+.item-wrap-details .item-wrap-content .content-rate i{
+    color: #CA8E46;
+    font-size: 20px;
+    padding: 5px;
+}
+.item-wrap-details .item-wrap-content .content-content p{
+    color: #aaaaaa;
+    font-size: 14px;
+}
+.item-wrap-details .item-wrap-content .review-link-content{
+    display: flex;
+    justify-content: space-between;
+}
+.item-wrap-details .item-wrap-content .review-link-content img{
+    width: 30px;
+    height: 30px;
+}
+.item-wrap-details .item-wrap-content .review-link-content p{
+    color: #aaaaaa;
+    
+}
+.item-wrap-details .item-wrap-content .review-link-content p span a{
+    color: #CA8E46;
+    font-size: 16px;
+}
+.item-wrap-details .item-wrap-content .review-link-content h6{
+    color: #fff;
+}
+/*--------------------------------------------------- Review Section End ---------------------------------------------*/
+
+/*------------------------------------------------- App Download Section Start -----------------------------------*/
+.apps-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.apps-img img{
+    width: 350px;
+    animation: appAnimate 15s linear infinite;
+}
+.apps-img .img2{
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@keyframes appAnimate{
+	0%, 100%{
+		transform: scale(1.1);
+	}
+}
+
+.apps-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
+.apps-download .app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, .1);
+    padding: 3px 15px;
+    margin: 20px;
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+.apps-download .app i{
+    font-size: 40px;
+}
+.apps-download .app p{
+    color: #fff;
+    font-size: 14px;
+}
+.apps-download .app p span{
+    font-size: 24px;
+}
+.apps-download .app img{
+    width: 30px;
+    height: 30px;
+}
+/*------------------------------------------------- App DOwnload Section End ----------------------------------*/
 
 /*--========================================== Blog Page Start ===============================================--*/
 
@@ -1273,8 +1419,7 @@ display:block;
   }
 
   .card-img img {
-      position: relative    ;
-    
+      position: relative;
   }
 
   .card-img:hover img {
@@ -1560,76 +1705,165 @@ display:block;
    background: transparent;
 }
 /*----------------------------------------------------Footer section start--------------------------------------*/
-.footer{
-    text-align: center;
-    margin-bottom: 0 ;
-    background: url(../images/footer.jpg);
-    background-repeat: no-repeat;
+.footer-section {
+    background: url(../images/special-offer.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.footer-sec{
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.footer .share{
-    padding:1rem 0;
-}
-
-.footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #aaaaaa;
+  }
+  .single-cta i {
     color: #CA8E46;
-    border:1px solid #CA8E46;
-    text-decoration: none;
-    margin:.3rem;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #aaaaaa;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-logo img {
+      max-width: 200px;
+  }
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+        color: #aaaaaa;
+    line-height: 28px;
+  }
+  .footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
     border-radius: 50%;
-    transition: 1.5s;
-}
-
-.footer .share a:hover{
-    background-color: #CA8E46;
+  }
+  .facebook-bg{
+    background: #3B5998;
+  }
+  .twitter-bg{
+    background: #55ACEE;
+  }
+  .google-bg{
+    background: #DD4B39;
+  }
+  .footer-widget-heading h3 {
     color: #fff;
-    transform: rotate(360deg);
-}
-
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    gap:1rem;
-}
-
-.footer .links a{
-    padding:.7rem 2rem;
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #CA8E46;
+  }
+  .footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
     color: #CA8E46;
-    border:1px solid #CA8E46;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    transition: 0.7s ease;
-}
-
-.footer .links a:hover{
-    background-color: #CA8E46;
+  }
+  .footer-widget ul li a {
+    color: #aaaaaa;
+    text-transform: capitalize;
+  }
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
     color: #fff;
-}
-
-.footer .credit{
-    font-size: 2rem;
-    color:#fff;
-    font-weight: lighter;
-    padding:1.5rem;
-}
-
-.footer .credit span{
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #CA8E46;
+      padding: 13px 20px;
+      border: 1px solid #CA8E46;
+      top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  .copyright-area{
+    background: rgba(0, 0, 0, .5);
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+  }
+  .copyright-text p a{
     color: #CA8E46;
-    font-weight: 400;
-}
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #CA8E46;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #aaaaaa;
+  }
 /*----------------------------------------------------Footer section end--------------------------------------*/
 
 

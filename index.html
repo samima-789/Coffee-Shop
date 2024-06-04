@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-
+    <link rel="stylesheet" href="./assets/css/plugins/all.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins/jquery-ui.min.css">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="./assets/css/plugins/font-awesome.min.css">
     <!-- Font family link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <!-- Slick Slider link-->
+    <link rel="stylesheet" href="./assets/css/plugins/slick-theme.min.css">
+    <link rel="stylesheet" href="./assets/css/plugins/slick.css">
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
     <!-- custom css file link  -->
@@ -134,37 +138,22 @@
 <!------------------------------------------ Special Day section Ends ------------------------------------------------------------>
 
 
-<!------------------------------------------ Location section start ------------------------------------------------------------>
+<!------------------------------------------------ Day with coffee section start ---------------------------------------->
 
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="location-section">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h4>Location</h4>
-                    <p>Shagupta Housing, Mirpur DOHS</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="location-section">
-                    <i class="fa-solid fa-box-open"></i>
-                    <h4>Open Our Shop</h4>
-                    <p>Shagupta Housing, Mirpur DOHS</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="location-section">
-                    <i class="fa-solid fa-address-book"></i>
-                    <h4>Contact Us</h4>
-                    <p>Shagupta Housing, Mirpur DOHS</p>
+            <div class="col-12">
+                <div class="day-coffee">
+                    <img src="./assets/images/menu-3.png">
+                    <h2>Start your day with coffee</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!------------------------------------------ Location section end ------------------------------------------------------------>
+<!------------------------------------------------ Day with coffee section ends ----------------------------------------->
 
 
 <!--------------------------------------------- Menu section starts  ---------------------------------------------------------->
@@ -266,23 +255,25 @@
 </section>
 <!------------------------------------------------ Menu section ends ---------------------------------------------------->
 
-
-<!------------------------------------------------ Day with coffee section start ---------------------------------------->
+<!------------------------------------------------ UpComing Section start ----------------------------------------------->
 
 <section>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="day-coffee">
-                    <img src="./assets/images/menu-3.png">
-                    <h2>Start your day with coffee</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
+                <div class="up-coming">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h2>UpComing Event</h2>
+                    <h4><span>30% Off </span>   For first 3 menu</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived</p>
+                    <a href="#" class="btn">Order now</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!------------------------------------------------ Day with coffee section ends ----------------------------------------->
+
+<!------------------------------------------------ UpComing Section end ------------------------------------------------->
 
 
 <!------------------------------------------------ Special Offer Section start ------------------------------------------>
@@ -367,28 +358,40 @@
 </section>
 <!------------------------------------------------ Special Offer Section end -------------------------------------------->
 
-<!------------------------------------------------ UpComing Section start ----------------------------------------------->
+<!------------------------------------------ Location section start ------------------------------------------------------------>
 
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="up-coming">
-                    <i class="fa-solid fa-mug-hot"></i>
-                    <h2>UpComing Event</h2>
-                    <h4><span>30% Off </span>   For first 3 menu</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived</p>
-                    <a href="#" class="btn">Order now</a>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="location-section">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>Location</h4>
+                    <p>Shagupta Housing, Mirpur DOHS</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="location-section">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h4>Open Our Shop</h4>
+                    <p>Shagupta Housing, Mirpur DOHS</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="location-section">
+                    <i class="fa-solid fa-address-book"></i>
+                    <h4>Contact Us</h4>
+                    <p>Shagupta Housing, Mirpur DOHS</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!------------------------------------------------ UpComing Section end ------------------------------------------------->
+<!------------------------------------------ Location section end ------------------------------------------------------------>
 
 
-<!------------------------------------------------ Team Member Section start ----------------------------------------------->
+<!------------------------------------------------ Menu Card Section start ----------------------------------------------->
 
 <section id="section-drinks-menu" aria-label="section">
     <div class="container">
@@ -396,7 +399,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 item">
                 <div class="menu-wrap">
                     <div class="menu-item thead">
-                        <div class="c1">coffee</div>
+                        <div class="c1 cx">coffee</div>
                         <div class="c2">Medium<span>16 oz</span></div>
                         <div class="c3">Large<span>20 oz</span></div>
                     </div>
@@ -471,7 +474,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 item">
                 <div class="menu-wrap">
                     <div class="menu-item thead">
-                        <div class="c1">espresso</div>
+                        <div class="c1 cx">espresso</div>
                         <div class="c2">Medium<span>16 oz</span></div>
                         <div class="c3">Large<span>20 oz</span></div>
                     </div>
@@ -554,7 +557,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 item">
                 <div class="menu-wrap">
                     <div class="menu-item thead">
-                        <div class="c1">non coffee</div>
+                        <div class="c1 cx">non coffee</div>
                         <div class="c2">Medium<span>16 oz</span></div>
                         <div class="c3">Large<span>20 oz</span></div>
                     </div>
@@ -606,7 +609,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 item">
                 <div class="menu-wrap">
                     <div class="menu-item thead">
-                        <div class="c1">add ons</div>
+                        <div class="c1 cx">add ons</div>
                     </div>
 
                     <div class="spacer-half"></div>
@@ -661,60 +664,61 @@
         </div>
     </div>
 </section>
-<!------------------------------------------------ Team Member section ends ----------------------------------------------------->
+<!------------------------------------------------ Menu Card section ends ----------------------------------------------------->
 
-<!------------------------------------------------ Review section start --------------------------------------------------------->
+<!------------------------------------------------ Chef section start --------------------------------------------------------->
 <section>
     <div class="container">
+        <div id="content" style="max-width: 100%; text-align: center; height: 160px; margin-bottom: 50px;">
+            <h3>Our <br />  <span>Chef</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel? </p>    
+        </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="testimonial">
-                    <img src="./assets/images/chef1.jpeg">
+                    <img src="./assets/images/chef5.jpeg">
                 <div class="details">
                     <h2>Allija Alison</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias cum fugiat earum, excepturi totam, officia sequi tenetur velit suscipit beatae ratione magni accusantium consequatur.</p>
+                    <p>Chef Manager</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
                 </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="testimonial">
-                    <img src="./assets/images/chef2.jpeg">
+                    <img src="./assets/images/chef6.jpeg">
                 <div class="details">
                     <h2>Maike Golomy</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias cum fugiat earum, excepturi totam, officia sequi tenetur velit suscipit beatae ratione magni accusantium consequatur.</p>
+                    <p>Support Manager</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
                 </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="testimonial">
-                    <img src="./assets/images/chef3.jpeg">
+                    <img src="./assets/images/chef7.jpeg">
                 <div class="details">
                     <h2>Rosalyn Golay</h2>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias cum fugiat earum, excepturi totam, officia sequi tenetur velit suscipit beatae ratione magni accusantium consequatur.</p>
+                    <p>Cafe Associate</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
                 </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!------------------------------------------------ Review section ends ---------------------------------------------------------->
+<!------------------------------------------------ Chef section ends ---------------------------------------------------------->
 
 <!------------------------------------------------ Others Section start --------------------------------------------------------->
 
@@ -747,49 +751,517 @@
 </section>
 <!------------------------------------------------ Others Section ends ---------------------------------------------------------->
 
+<!------------------------------- Review Section Start -------------------------------------------------->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="content" style="max-width: 100%; text-align: center; height: 160px;">
+                    <h3><span>Review</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel? </p>    
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="button-group-wrap">
+                    <ul>
+                        <li data-filter="*">All Reviews <span>4.5</span></li>
+                        <li data-filter=".google">Google <img src="./assets/images/google.png"><span>4.5</span></li>
+                        <li data-filter=".facebook">Facebook <img src="./assets/images/facebook.png"> <span>4.5</span></li>
+                        <li data-filter=".yelp">Yelp <img src="./assets/images/yelp.png"> <span>4.5</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-12">
+                <div class="item-wrap-details">
+                    <div class="col-lg-3 col-md-6 item-wrap yelp">
+                        <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review1.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/yelp.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Yelp</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap facebook">
+                        <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review2.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/facebook.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Facebook</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap facebook">
+                            <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review3.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/facebook.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Facebook</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap yelp">
+                            <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review4.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/yelp.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Yelp</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap google">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review5.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/google.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Google</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap google">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review6.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/google.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Google</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap facebook">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review7.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/facebook.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Facebook</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap yelp">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review8.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/yelp.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Yelp</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap google">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review9.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/google.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Google</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 item-wrap google">
+                    <div class="item-wrap-content">
+                            <div class="content-identity">
+                                <img src="./assets/images/review10.png">
+                                <h4>Ashley Sarfass</h4>
+                            </div>
+                            <div class="content-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="content-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                            </div>
+                            <div class="review-link-content">
+                                <img src="./assets/images/google.png">
+                                <p>Posted on <br />
+                                <span><a href="#">Google</a></span></p>
+                                <h6>5 Months ago</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                            <div class="col-lg-3 col-md-6 item-wrap yelp">
+                                <div class="item-wrap-content">
+                                    <div class="content-identity">
+                                        <img src="./assets/images/review11.png">
+                                        <h4>Ashley Sarfass</h4>
+                                    </div>
+                                    <div class="content-rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="content-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                                    </div>
+                                    <div class="review-link-content">
+                                        <img src="./assets/images/yelp.png">
+                                        <p>Posted on <br />
+                                        <span><a href="#">Yelp</a></span></p>
+                                        <h6>5 Months ago</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 item-wrap facebook">
+                                <div class="item-wrap-content">
+                                        <div class="content-identity">
+                                            <img src="./assets/images/review12.png">
+                                            <h4>Ashley Sarfass</h4>
+                                        </div>
+                                        <div class="content-rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="content-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rerum non esse vitae blanditiis temporibus! </p>
+                                        </div>
+                                        <div class="review-link-content">
+                                            <img src="./assets/images/facebook.png">
+                                            <p>Posted on <br />
+                                            <span><a href="#">Facebook</a></span></p>
+                                            <h6>5 Months ago</h6>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!------------------------------- Review Section End ----------------------------------------------------->
+
+
+<!-------------------------------- App Download Section Start --------------------------------------------->
+
+<section>
+    <div class="container">
+        <div class="app-downloads"></div>
+        <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="apps-img">
+                        <img src="./assets/images/app-download.png">
+                        <img src="./assets/images/app-download.png" class="img2">
+                    </div>
+                   </div>
+                   <div class="col-lg-6 col-md-12">
+                       <div class="apps-download">
+                        <div class="app">
+                            <i class="fa-brands fa-apple"></i>
+                            <p>Download on the <br />
+                            <span>App Store</span></p>
+                        </div>
+                        <div class="app">
+                            <img src="./assets/images/playstore.png">
+                            <p>GET IT ON <br />
+                            <span>Google Play</span></p>
+                        </div>
+                       </div>
+                   </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------- App Download Section End ---------------------------------------------->
 
 <!-------------------------------------------------- footer section starts  ----------------------------------------------------->
-<section class="footer">
-<div class="footer-sec">
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fa-brands fa-youtube"></a>
+<footer class="footer-section">
+    <div class="overlay">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><div class="logo"><h1>K<span>O</span>FI</h1></div></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="links">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#menu">menu</a>
-        <a href="#products">new products</a>
-        <a href="#offer">Special Offer</a>
-        <a href="#review">review</a>
-        <a href="#blogs">blogs</a>
-        <a href="#contact">contact</a>
-       
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="index.html">KOFI</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="credit">created by <span>Mr. Chef</span> | all rights reserved</div>
-</div>
-</section>
+    </div>
+</footer>
 
 
 <!---------------------------------------------------- footer section ends ------------------------------------------------>
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<script src="js/jQuery.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<!-- JS Link -->
+<script src="./assets/js/plugins/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/plugins/jquery.slim.min.js"></script>
+<!-- jQuery Link -->
+<script src="./assets/js/plugins/isotope.pkgd.min.js"></script>
+<!-- Slick Slider Link-->
+<script src="./assets/js/plugins/slick.min.js"></script>
 <!-- Bootstrap Link -->
 <script src="./assets/js/plugins/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/plugins/popper.min.js"></script>
 <scrpt src="./assets/js/plugins/bootstrap.min.js"></scrpt>
+
+<!-- custom js file link  -->
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
