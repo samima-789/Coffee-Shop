@@ -1268,6 +1268,27 @@ display:block;
 
 /*---------------------------------------------------- Others section ends ----------------------------------------*/
 /*---------------------------------------------------- Review Section Start ----------------------------------------------*/
+.review{
+    background: url(../images/review-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-overlay{
+    position: relative;
+    z-index: 1;
+}
+.bg-overlay:before {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .button-group-wrap{
     text-align: center;
     margin: 30px auto;
@@ -1307,7 +1328,7 @@ display:block;
     width: 100%;
 }
 .item-wrap-details .item-wrap-content{
-    background: rgba(255, 255, 255, .1);
+    background: rgba(0, 0, 0, .3);
     padding: 20px;
 }
 .item-wrap-details .item-wrap-content .content-identity{
@@ -1322,6 +1343,7 @@ display:block;
 .item-wrap-details .item-wrap-content .content-identity h4{
     color: #fff;
     padding: 5px;
+    letter-spacing: 1px;
 }
 .item-wrap-details .item-wrap-content .content-rate i{
     color: #CA8E46;
@@ -1354,6 +1376,22 @@ display:block;
 /*--------------------------------------------------- Review Section End ---------------------------------------------*/
 
 /*------------------------------------------------- App Download Section Start -----------------------------------*/
+.apps{
+    position: relative;
+}
+.apps-downloads{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.apps-downloads h1{
+    color: #CA8E46;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Courgette", cursive;
+    text-align: center;
+}
 .apps-img{
     display: flex;
     justify-content: center;
@@ -1362,7 +1400,6 @@ display:block;
 }
 .apps-img img{
     width: 350px;
-    animation: appAnimate 15s linear infinite;
 }
 .apps-img .img2{
     width: 250px;
@@ -1370,17 +1407,11 @@ display:block;
     left: 0;
     top: 0;
 }
-@keyframes appAnimate{
-	0%, 100%{
-		transform: scale(1.1);
-	}
-}
-
 .apps-download{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0px;
+    padding: 20px 0px;
 }
 .apps-download .app{
     display: flex;

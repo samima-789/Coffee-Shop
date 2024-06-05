@@ -98,8 +98,8 @@
 @media(max-width:480px){
 	.dropdown-content {
         min-width: 115px;
-        left: 80px;
-        top: 30px;
+        left: 45px;
+        top: 15px;
     }
 	.story-part-2{
 		margin-top: 100px;
@@ -124,6 +124,32 @@
 	}
 	.box .content{
 		top: -140%;
+	}
+	.apps-img img{
+		width: 250px;
+	}
+	.apps-img .img2{
+		width: 200px;
+	}
+	#section-drinks-menu::before{
+		height: 228vh;
+	}
+
+	.breadcrumb h1{
+		font-size: 34px;
+	}
+	.about-details{
+		text-align: center;
+	}
+	.according{
+		width: 500px;
+	}
+	.according-item button{
+		font-size: 16px;
+	}
+	.according-content p{
+		font-size: 10px;
+		letter-spacing: 0px;
 	}
 	
 }
