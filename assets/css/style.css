@@ -21,16 +21,72 @@ html{
 }
 
 body{
-    background: #010103;
+    background: #000;
 }
 
 section{
     margin-bottom: 100px;
 }
 
+/* Preloader
+-------------------------------------------------------*/
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    z-index: 100;
+}   
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+}
+.loader{
+    padding: 5px;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 3px solid #aaaaaa;
+    border-bottom: 3px solid #CA8E46;
+    border-top: 3px solid #CA8E46;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 a{
     text-decoration: none;
 }
+
+/*-- Header-part section start --*/
+.header-part{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header-part h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.header-part h3 span{
+    color: #CA8E46;
+    text-transform: uppercase;
+}
+.header-part p{
+    color: #aaaaaa;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/*-- Header Section start --*/
 .sticky{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 1px 1px rgba(202, 142, 70, 0.2),
@@ -47,7 +103,6 @@ a{
     margin: 100px auto;
     position: relative;
 }
-
 .heading::before{
     content: '';
     display: block;
@@ -59,7 +114,6 @@ a{
     top: 30%;
     z-index: -2;
 }
-
 .heading::after{
     content: '';
     display: block;
@@ -71,13 +125,11 @@ a{
     top: 30%;
     z-index: -2;
 }
-
 .heading span{
     background-color: #000;
     color:#543a2a;
     text-transform: uppercase;
 }
-
 .btn{
     text-decoration: none;
 	border: 1px solid #fff;
@@ -92,7 +144,6 @@ a{
     inset 0.3em 0.3em 0 0 #fff;
     transition: 0.7s;
 }
-
 .btn:hover{
     letter-spacing: .2rem;
     color: #CA8E46;
@@ -100,15 +151,12 @@ a{
                0 0 0 0 #fff,
                inset 6em 3.5em 0 0 #fff;
 }
-
 #content{
     max-width: 550px;
     height: 250px;
     padding: 25px;
     border-radius: 30px;
-    
 }
-
 #content h3{
     font-size: 30px;
     color: #fff;
@@ -116,7 +164,6 @@ a{
     line-height: 35px;
     text-transform: uppercase;
 }
-
 #content h3 span{
     font-size: 90px;
     font-weight: 100;
@@ -125,7 +172,6 @@ a{
     letter-spacing: 5px;
     font-family: 'Mrs Saint Delafield', cursive;
 }
-
 #content p{
     width: 90%;
     font-size: 13px;
@@ -136,12 +182,10 @@ a{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 #heading{
     text-align: center;
     margin-bottom: 50px;
 }
-
 #heading h3{
     font-size: 30px;
     color: #fff;
@@ -472,7 +516,9 @@ a{
     color: #aaaaaa;
     margin-top: 15px;
 }
-
+.blog-details img{
+    width: 50px;
+}
 .blog-comment{
     width: 100%;
     margin: 0 auto;
@@ -881,30 +927,10 @@ header .menu{
 /*----------------------------------------------------Special offer section start--------------------------------------*/
 .special-offer{
     min-height: 100vh;
-    background: url(../images/special-offer.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    background-attachment: fixed;
     padding: 30px;
     position: relative;
-}
-
-.special-offer::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 145vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.special-offer .offer{
-    position: relative;
-    z-index: 2;
 }
 
 .special-offer .box{
@@ -1014,8 +1040,38 @@ header .menu{
 }
 /*---------------------------------------------------- UpComing section ends ---------------------------------------*/
 
+/*------------- Client Area Section Start -----------------------*/
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+}
 
 
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
 /*----------------------------------------------------Team Member section start--------------------------------------*/
 
 #section-drinks-menu{
@@ -1609,7 +1665,99 @@ display:block;
     gap:1rem;
 }
 
-.contact .row img{
+.contact-info-map-area {
+    position: relative;
+}
+
+.contact-information-container {
+    background: #ffffff none repeat scroll 0 0;
+    display: block;
+    margin: 60px 0;
+    padding: 54px 0 70px;
+    position: absolute;
+    right: 14%;
+    top: 0;
+    width: 370px;
+}
+
+.info-icon i{
+    color: #614a3d;
+    display: block;
+    float: left;
+    font-size: 30px;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.info-text {
+    display: block;
+    float: left;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.single-information {
+    margin-bottom: 36px;
+    overflow: hidden;
+    padding: 0 85px;
+}
+
+.contact-links>h3 {
+    color: #5e5e5e;
+    margin-bottom: 16px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.social-links a i {
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 6px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 26px;
+}
+
+.social-links .fa-facebook {
+    background: #3b5998 none repeat scroll 0 0;
+}
+
+.social-links .fa-google-plus {
+    background: #ea4335 none repeat scroll 0 0;
+}
+
+.social-links .fa-twitter {
+    background: #1c9dec none repeat scroll 0 0;
+}
+
+.social-links .fa-pinterest {
+    background: #cb1f27 none repeat scroll 0 0;
+}
+
+.social-links .fa-linkedin {
+    background: #0177b5 none repeat scroll 0 0;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a i:hover {
+    background: #000000 none repeat scroll 0 0;
+}
+
+#contact-form .default-btn {
+    margin-top: 20px;
+    padding: 0 95px;
+}
+
+
+.contact .row .contact-img{
     flex:1 1 45rem;
     width: 45%;
     object-fit: cover;

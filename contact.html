@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/coffee-cup.ico">
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="./assets/css/plugins/all.min.css">
     <link rel="stylesheet" href="./assets/css/plugins/font-awesome.min.css">
+    <!-- Font family link -->
+    <link rel="stylesheet" href="./assets/css/plugins/googleapis.css">
     <!-- Main CSS link -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
 <body>
+<!----- Preloader ----->
+<div id="preloader">
+    <div class="loading">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!----- header section starts ----->
 <header class="sticky">
     <input type="checkbox" name="" id="chk1">
@@ -64,13 +80,59 @@
  </section>
 <!----- Breadcrumb area section end ----->
 
+<section class="contact-info-map-area">
+    <!-- Google Map Start -->
+    <div class="google-map-area">
+        <!--  Map Section -->
+        <div id="contacts" class="map-area">
+            <iframe id="gmap_canvas" style="width:100%;height:600px;border: none;" src="https://maps.google.com/maps?q=121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+    </div>
+    <!-- Google Map End -->
+    <!-- Contact Information Container Start -->
+    <div class="contact-information-container">
+        <div class="single-information">
+            <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="info-text">+012 345 678 102<br>+012 345 678 102</span>
+        </div>
+        <div class="single-information">
+            <span class="info-icon"><i class="fas fa-globe"></i></span>
+            <span class="info-text">devitems@email.com<br>www.devitems.com</span>
+        </div>
+        <div class="single-information">
+            <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="info-text">Address goes here,<br>street,Crossroad123.</span>
+        </div>
+        <div class="contact-links">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Information Container End -->
+</section>
 
 <!----- Contact Us section start ----->
 <section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-part">
+                    <img src="./assets/images/coffee-cup.jpg">
+                    <h3>Get In <span>Touch</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
-       <img src="./assets/images/contact.jpg">
+       <img src="./assets/images/contact.jpg" class="contact-img">
         <form action="">
-            <h3>Contact Us</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="text" placeholder="name">

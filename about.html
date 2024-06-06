@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/coffee-cup.ico">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="./assets/css/plugins/font-awesome.min.css">
     <!-- Font family link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/plugins/googleapis.css">
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
     <!-- Main css link  -->
@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
+<!----- Preloader ----->
+<div id="preloader">
+    <div class="loading">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!----- header section starts ----->
   <header class="sticky">
     <input type="checkbox" name="" id="chk1">
@@ -80,6 +92,7 @@
                         <span>Lorem ipsum dolor sit amet consectetur.</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nobis ratione dolorum quam porro voluptas. Dolores, obcaecati sit quas, accusantium fugiat sunt neque vitae accusamus repellat, suscipit ut alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, velit. </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod aperiam asperiores nesciunt quis. Cumque quia similique doloribus optio fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, soluta. </p>
+                        <a href="contact.html" class="btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -148,6 +161,7 @@
                         <span>Lorem ipsum dolor sit amet consectetur.</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nobis ratione dolorum quam porro voluptas. Dolores, obcaecati sit quas, accusantium fugiat sunt neque vitae accusamus repellat, suscipit ut alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, velit. </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod aperiam asperiores nesciunt quis. Cumque quia similique doloribus optio fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, soluta. </p>
+                        <a href="contact.html" class="btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -227,11 +241,15 @@
 
 <!----- Our team section start ----->
 <section>
-    <div class="our-team-heading">
-        <div class="our-team-details">
-            <img src="./assets/images/about/counter4.jpg">
-            <h3>Our Team</h3>
-            <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-part">
+                    <img src="./assets/images/coffee-cup.jpg">
+                    <h3>Our <span>Team</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="our-team">

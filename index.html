@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/coffee-cup.ico">
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css">
     <!-- jQuery Link -->
@@ -13,9 +15,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="./assets/css/plugins/font-awesome.min.css">
     <!-- Font family link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/plugins/googleapis.css">
     <!-- Slick Slider link-->
     <link rel="stylesheet" href="./assets/css/plugins/slick-theme.min.css">
     <link rel="stylesheet" href="./assets/css/plugins/slick.css">
@@ -25,7 +25,19 @@
 
 </head>
 <body>
-
+<!----- Preloader ----->
+<div id="preloader">
+    <div class="loading">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----- Preloader ----->    
 <!----- header section starts ----->
     <header class="sticky">
         <input type="checkbox" name="" id="chk1">
@@ -66,8 +78,6 @@
         </div>
     </header>
 <!----- header section ends ------>
-
-
 <!----- hero section starts ----->
 <section class="home" id="home">
 
@@ -75,13 +85,11 @@
         <h3><span>welcome</span> 
             <br>Our kofi shop</h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel? </p>
-        <a href="reservation.html" class="btn">Order now</a>
+        <a href="contact.html" class="btn">Let's talk</a>
     </div>
 
 </section>
 <!----- home section ends ----->
-
-
 <!----- Our story section starts ----->
 <section>
 <div class="container">
@@ -106,8 +114,6 @@
 </div>
 </section>
 <!----- Our story section ends ----->
-
-
 <!----- Special Day section start ----->
 <section class="special-day">
 <div class="container">
@@ -126,8 +132,6 @@
 </div>
 </section>
 <!----- Special Day section Ends ----->
-
-
 <!----- Day with coffee section start ----->
 <section>
     <div class="container">
@@ -143,8 +147,6 @@
     </div>
 </section>
 <!------ Day with coffee section ends ----->
-
-
 <!------ Menu section starts ----->
 <section class="our-menu">
     <div class="container">
@@ -243,8 +245,6 @@
     </div>
 </section>
 <!----- Menu section ends ----->
-
-
 <!----- UpComing Section start ----->
 <section>
     <div class="container">
@@ -255,95 +255,114 @@
                     <h2>UpComing Event</h2>
                     <h4><span>30% Off </span>   For first 3 menu</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived</p>
-                    <a href="reservation.html" class="btn">Order now</a>
+                    <a href="reservation.html" class="btn">Reservation Now</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!------ UpComing Section end ----->
-
-
-<!----- Special Offer Section start ----->
-<section class="special-offer">
+<!----- Client area section start ----->
+<section>
     <div class="container">
-        <div class="row offer">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-1.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 vertical-center slider">
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
+                  <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum rem enim. Optio qui doloribus eos ex voluptatem, dolorem quis.</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h3>William Goloy</h3>
+                  </div>
             </div>
-
-            <div class="col-lg-8 col-md-12 col-sm-12">
-                <div id="content" style="text-align: center;">
-                <h3><span>Special</span>
-                    <br> Our Offer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione. </p>    
-            </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-2.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-3.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-4.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-5.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-6.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="box">
-                    <img src="./assets/images/menu-1.png">
-                    <h3>special Offer</h3>
-                    <h5>20% Off</h5>
-                    <p>$15.99 <span>$20.99</span></p>
-                </div>
-            </div>
+            <div class="col-lg-6 col-md-12"></div>
         </div>
     </div>
 </section>
-<!----- Special Offer Section end ----->
-
-
+<!----- Client area section end ----->
 <!----- Location section start ----->
 <section>
     <div class="container">
@@ -373,8 +392,6 @@
     </div>
 </section>
 <!----- Location section end ----->
-
-
 <!------ Menu Card Section start ------>
 <section id="section-drinks-menu" aria-label="section">
     <div class="container">
@@ -629,8 +646,6 @@
     </div>
 </section>
 <!------ Menu Card section ends ------>
-
-
 <!----- Chef section start ----->
 <section>
     <div class="container">
@@ -684,8 +699,6 @@
     </div>
 </section>
 <!----- Chef section ends ----->
-
-
 <!------ Others Section start ------>
 <section>
     <div class="container">
@@ -705,8 +718,8 @@
                 <img src="./assets/images/others-pic-2.jpeg">
                 <div class="others-details">
                     <div class="details">
-                        <p>Mocha Latte</p>
-                        <h1><span>Buy 1 </span>Get 1</h1>
+                        <p>Caramel Late</p>
+                        <h1><span>Free </span>Upsize</h1>
                         <button class="btn">Order Now</button>
                     </div>
                 </div>
@@ -715,8 +728,6 @@
     </div>
 </section>
 <!----- Others Section ends ----->
-
-
 <!----- Review Section Start ----->
 <section class="review">
     <div class="bg-overlay">
@@ -1050,8 +1061,6 @@
     </div>
 </section>
 <!----- Review Section End ------>
-
-
 <!----- App Download Section Start ----->
 <section>
     <div class="container">
@@ -1089,7 +1098,6 @@
     </div>
 </section>
 <!----- App Download Section End ----->
-
 <!----- footer section starts ----->
 <footer class="footer-section">
     <div class="overlay">
