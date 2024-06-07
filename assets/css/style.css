@@ -11,6 +11,7 @@ Secondary text-color: #ABB2B9*/
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    color: #fff;
 }
 
 html{
@@ -26,6 +27,13 @@ body{
 
 section{
     margin-bottom: 100px;
+}
+a{
+    color: #fff;
+}
+
+p{
+    color: #aaaaaa;
 }
 
 /* Preloader
@@ -73,7 +81,6 @@ a{
 .header-part h3{
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
     padding: 10px;
     text-transform: uppercase;
 }
@@ -82,7 +89,6 @@ a{
     text-transform: uppercase;
 }
 .header-part p{
-    color: #aaaaaa;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -96,7 +102,6 @@ a{
 
 .heading{
     text-align: center;
-    color:#fff;
     text-transform: uppercase;
     font-size: 4rem;
     max-width: 400px;
@@ -155,11 +160,10 @@ a{
     max-width: 550px;
     height: 250px;
     padding: 25px;
-    border-radius: 30px;
+    margin-left: 50px;
 }
 #content h3{
     font-size: 30px;
-    color: #fff;
     word-spacing: 5px;
     line-height: 35px;
     text-transform: uppercase;
@@ -178,7 +182,6 @@ a{
     line-height: 25px;
     letter-spacing: .8px;
     padding: 10px 0;
-    color: #ABB2B9;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -188,7 +191,6 @@ a{
 }
 #heading h3{
     font-size: 30px;
-    color: #fff;
     word-spacing: 5px;
     line-height: 55px;
     text-transform: uppercase;
@@ -209,16 +211,31 @@ a{
     line-height: 25px;
     letter-spacing: .8px;
     padding: 10px 0;
-    color: #ABB2B9;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/*------- Breadcrumb-area -------*/
+/*----- Blur Background -----*/
+.blur-bg{
+    position: relative;
+    z-index: 1;
+}
+.blur-bg:before {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/*----- Breadcrumb-area -----*/
 .bg-img{
-    background-image: url(../images/breadcrumb-bg-img.jpg);
+    background-image: url(../images/bg-breadcrumb-img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     min-height: 500px;
 }
@@ -246,7 +263,6 @@ a{
 .breadcrumb h1{
     font-size: 45px;
     font-weight: 700;
-    color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -254,7 +270,6 @@ a{
 /*---=================================== About Us Page Start ================================--*/
 .about-details{
     padding: 5%;
-    color: #fff;
 }
 .about-details img{
     margin-bottom: 20px;
@@ -275,7 +290,6 @@ a{
      letter-spacing: 1px;
      line-height: 25px;
      margin-top: 20px;
-     color: #aaaaaa;
 }
 
 .our-services{
@@ -312,7 +326,6 @@ a{
     transform: translate(-50%, -50%);
 }
 .text-tablecell>h3 {
-    color: #ffffff;
     font-family: "Courgette", cursive;
     font-size: 20px;
     line-height: 36px;
@@ -390,7 +403,6 @@ a{
 
 .counter-content .counter-box .counter {
     font-size: 40px;
-    color: #fff;
     font-weight: 500;
     font-family: sans-serif;
 }
@@ -408,7 +420,6 @@ a{
 .our-team-details{
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;
 }
 .our-team-details h3{
     font-size: 22px;
@@ -463,7 +474,6 @@ a{
     border-radius: 50%;
 }
 .our-team-card .our-team-card-content{
-    color: #fff;
     text-align: center;
     padding: 10px;
 }
@@ -475,7 +485,6 @@ a{
 }
 .our-team-card .our-team-card-content .team-member-designation p{
     font-size: 14px;
-    color: #aaaaaa;
 }
 .our-team-card .our-team-card-content .team-member-social-links a i{
     font-size: 20px;
@@ -493,7 +502,6 @@ a{
 .blog-single{
     text-align: justify;
     padding: 0 10%;
-    color: #fff;
 }
 .blog-details{
     margin-bottom: 100px;
@@ -513,7 +521,6 @@ a{
 .blog-details p{
     font-size: 14px;
     line-height: 25px;
-    color: #aaaaaa;
     margin-top: 15px;
 }
 .blog-details img{
@@ -523,7 +530,6 @@ a{
     width: 100%;
     margin: 0 auto;
     padding: 0 10%;
-    color: #fff;
 }
 .blog-comment form h3{
     display: block;
@@ -551,7 +557,7 @@ a{
 .blog-comment form textarea{
     background-color: transparent;
     padding: 15px;
-    border: 1px solid #646464;
+    border: 1px solid #aaaaaa;
     margin-bottom: 30px;
 }
 .blog-comment form .submit{
@@ -576,15 +582,11 @@ header{
 #chk1{
     display: none;
 }
-
 i{
-    color: #fff;
     cursor: pointer;
 }
-
  .logo{
     flex: 1;
-    color: #fff;
     margin-left: 80px;
     text-transform: uppercase;
     font-size: 18px;
@@ -639,7 +641,6 @@ header ul li{
 
 header  ul li a{
     text-decoration: none;
-    color: #fff;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -681,7 +682,6 @@ header .menu{
     font-weight: 600;
     border: none;
     outline: none;
-    color: #fff;
     background-color: inherit;
     margin: 0;
   }
@@ -690,7 +690,6 @@ header .menu{
     display: none;
     position: absolute;
     background-color: rgba(202, 142, 70, 0.5);
-    color: #fff;
     min-width: 130px;
     min-height: 118px;
     border-radius: 5px;
@@ -700,7 +699,6 @@ header .menu{
   
   .dropdown-content a {
     float: none;
-    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -720,18 +718,18 @@ header .menu{
 
 
 
-/*----------------------------------------------------Home section start--------------------------------------*/
+/*----------------------------------------------------Hero section start--------------------------------------*/
 .home{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/home-img.jpg) no-repeat;
+    background:url(../images/bg-hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-/*----------------------------------------------------Home section end--------------------------------------*/
+/*----------------------------------------------------Hero section end--------------------------------------*/
 
 
 
@@ -752,25 +750,15 @@ header .menu{
 /*--------------------------------------------------- Special Day Section Start ---------------------------------------*/
 .special-day{
     min-height: 100vh;
-    background: url(../images/coffe.jpg);
-    background-size: cover;
+    background: url(../images/bg-special-day.jpg);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-attachment: fixed;
     padding: 0 50px;
     position: relative;
-}
-
-.special-day::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .special-day .special{
@@ -798,7 +786,6 @@ header .menu{
 }
 
 .location-section h4{
-    color: #fff;
     margin-top: 5px;
     font-size: 20px;
 }
@@ -806,7 +793,6 @@ header .menu{
 .location-section p{
     margin-top: 5px;
     font-size: 13px;
-    color: #ABB2B9;
     letter-spacing: 1px;
 }
 
@@ -815,27 +801,16 @@ header .menu{
 /*----------------------------------------------------Menu section start--------------------------------------*/
 .our-menu{
     min-height: 100vh;
-    background: url(../images/2.jpg);
-    background-size: cover;
+    background: url(../images/bg-menu.jpg);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-attachment: fixed;
     padding: 30px;
     position: relative;
 }
-
-.our-menu::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 145vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .our-menu .menu{
     position: relative;
     z-index: 2;
@@ -879,13 +854,11 @@ header .menu{
 
 .box .content p{
     font-size: 12px;
-	color: #ABB2B9;
     
 }
 
 .box .content .price{
     text-decoration: none;
-    color: #fff;
     font-size: 15px;
 }
 
@@ -915,7 +888,6 @@ header .menu{
 .day-coffee p{
     width: 70%;
     margin: auto;
-    color: #ABB2B9;
     font-size: 14px;
     padding: 20px;
 }
@@ -948,7 +920,7 @@ header .menu{
 
 .special-offer .box h3{
 	text-align: center;
-    color: #ABB2B9;
+    color: #aaaaaa;
 	font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -961,7 +933,6 @@ header .menu{
 }
 
 .special-offer .box p{
-	color: #777;
 	font-size: 2rem;
 	letter-spacing: 1px;
 	text-align: center;
@@ -970,7 +941,6 @@ header .menu{
 
 .special-offer .box span{
 	text-align: center;
-    color: #fff;
     font-size: 1.2rem;
     text-decoration: line-through;
 }
@@ -1019,7 +989,6 @@ header .menu{
 }
 
 .up-coming h4{
-    color: #fff;
     font-size: 25px;
 }
 
@@ -1034,32 +1003,34 @@ header .menu{
 .up-coming p{
     width: 70%;
     margin: auto;
-    color: #ABB2B9;
     font-size: 14px;
     margin-bottom: 20px;
 }
 /*---------------------------------------------------- UpComing section ends ---------------------------------------*/
 
 /*------------- Client Area Section Start -----------------------*/
+.client-area{
+    background: url(../images/bg-client.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .slider {
     width: 50%;
-    margin: 100px auto;
+    margin: 20px auto;
 }
-
+.slick-track {
+    position: relative;
+    top: 0px;
+    left: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .slick-slide {
   margin: 0px 20px;
 }
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: #fff;
-}
-
-
 .slick-slide {
   transition: all ease-in-out .3s;
   opacity: .2;
@@ -1072,12 +1043,35 @@ header .menu{
 .slick-current {
   opacity: 1;
 }
+.slider_of_client{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+.slider_of_client img{
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.slider_of_client p{
+  font-size: 16px;
+}
+.slider_of_client i{
+    font-size: 20px;
+    padding: 5px;
+    color: #CA8E46;
+}
+.slider_of_client h3{
+    padding: 5px;
+    margin-top: 10px;
+}
 /*----------------------------------------------------Team Member section start--------------------------------------*/
 
 #section-drinks-menu{
     width: 100%;
     min-height: 100vh;
-    background: url(../images/menu-bg.jpg);
+    background: url(../images/bg-menu-card.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1086,19 +1080,7 @@ header .menu{
     padding: 30px;
     position: relative;
 }
-
-#section-drinks-menu::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 160vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
 .menu-item{
-  color: #ffffff;
   display:table;
   width:100%;
   padding-bottom: 5px;
@@ -1135,10 +1117,6 @@ header .menu{
     color: #CA8E46;
 }
 
-.text-light .menu-item .c1{
-    color:#fff
-}
-
 .menu-item .c1,.c2,.c3{
     display:table-cell;
     width:auto;
@@ -1156,7 +1134,6 @@ header .menu{
  
  .menu-item .c1 span{
    padding:2px 4px 2px 5px;
-   color:#fff;
    margin-left:10px;
    text-transform:uppercase;
    letter-spacing:2px;
@@ -1180,7 +1157,6 @@ header .menu{
 .menu-item .c1 span.disc{
 margin-right:10px;
 text-transform:uppercase;
-color:#fff;
 padding:2px 5px 2px 10px;
 }
  
@@ -1207,7 +1183,6 @@ display:block;
 .menu-item .c3 span{
   display: inline-block;
   margin-right: 5px;
-  color: #fff;
 }
 
 
@@ -1216,14 +1191,14 @@ display:block;
 
 /*---------------------------------------------------- Chef section start ---------------------------------------*/
 .testimonial{
-    border: 1px solid grey;
+    border: 1px solid #aaaaaa;
     text-align: center;
     margin-top: 30px;
     transition: 0.7s ease;
 }
 
 .testimonial:hover{
-    box-shadow: 1px 2px 3px 4px #777;
+    box-shadow: 1px 2px 3px 4px #aaaaaa;
 }
 
 .testimonial img{
@@ -1243,7 +1218,6 @@ display:block;
 
 .testimonial .details h2{
     margin-top: 10px;
-    color: #fff;
     font-size: 22px;
     font-weight: 600;
 }
@@ -1255,7 +1229,6 @@ display:block;
 }
 
 .testimonial .details p{
-    color: #ABB2B9;
     line-height: 18px;
     font-size: 13px;
     margin-top: 10px;
@@ -1273,9 +1246,7 @@ display:block;
     height: 100%;
     object-fit: cover;
     position: relative;
-}
-.others img:hover{
-    transform: scale(1.1);
+    border-radius: 30px;
 }
 
 .others .others-details{
@@ -1297,7 +1268,6 @@ display:block;
 
 .others .others-details .details p{
     text-align: center;
-    color: #fff;
     font-size: 18px;
 }
 
@@ -1313,11 +1283,6 @@ display:block;
     margin: 0 auto;
     margin-top: 10px;
 }
-
-.others .details h1 span{
-    color: #fff;
-}
-
 .others-sec{
     width: 100%;
 }
@@ -1325,24 +1290,11 @@ display:block;
 /*---------------------------------------------------- Others section ends ----------------------------------------*/
 /*---------------------------------------------------- Review Section Start ----------------------------------------------*/
 .review{
-    background: url(../images/review-bg.jpg);
+    background: url(../images/bg-review.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.bg-overlay{
-    position: relative;
-    z-index: 1;
-}
-.bg-overlay:before {
-    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-attachment: fixed;
 }
 
 .button-group-wrap{
@@ -1358,7 +1310,6 @@ display:block;
     cursor: pointer;
     margin-right: 10px;
     border-radius: 5px;
-    color: #fff;
     font-size: 14px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -1384,7 +1335,7 @@ display:block;
     width: 100%;
 }
 .item-wrap-details .item-wrap-content{
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .6);
     padding: 20px;
 }
 .item-wrap-details .item-wrap-content .content-identity{
@@ -1397,7 +1348,6 @@ display:block;
     width: 50px;
 }
 .item-wrap-details .item-wrap-content .content-identity h4{
-    color: #fff;
     padding: 5px;
     letter-spacing: 1px;
 }
@@ -1407,7 +1357,6 @@ display:block;
     padding: 5px;
 }
 .item-wrap-details .item-wrap-content .content-content p{
-    color: #aaaaaa;
     font-size: 14px;
 }
 .item-wrap-details .item-wrap-content .review-link-content{
@@ -1418,16 +1367,9 @@ display:block;
     width: 30px;
     height: 30px;
 }
-.item-wrap-details .item-wrap-content .review-link-content p{
-    color: #aaaaaa;
-    
-}
 .item-wrap-details .item-wrap-content .review-link-content p span a{
     color: #CA8E46;
     font-size: 16px;
-}
-.item-wrap-details .item-wrap-content .review-link-content h6{
-    color: #fff;
 }
 /*--------------------------------------------------- Review Section End ---------------------------------------------*/
 
@@ -1484,7 +1426,6 @@ display:block;
     font-size: 40px;
 }
 .apps-download .app p{
-    color: #fff;
     font-size: 14px;
 }
 .apps-download .app p span{
@@ -1526,7 +1467,6 @@ display:block;
 
   .card-img .d-text h3 {
       font-size: 18px;
-      color: #ffffff;
   }
 
   .card-img:hover .d-text {
@@ -1703,7 +1643,7 @@ display:block;
 }
 
 .contact-links>h3 {
-    color: #5e5e5e;
+    color: #aaaaaa;
     margin-bottom: 16px;
     text-align: center;
     padding-top: 8px;
@@ -1711,7 +1651,6 @@ display:block;
 
 .social-links a i {
     border-radius: 50%;
-    color: #fff;
     display: inline-block;
     font-size: 16px;
     height: 26px;
@@ -1796,7 +1735,6 @@ display:block;
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
-    color:#fff;
     text-transform: none;
     background:none;
 }
@@ -1829,7 +1767,6 @@ display:block;
     font-size: 14px;
     font-weight: 100;
     padding-bottom: 20px;
-    color: #ABB2B9;
     letter-spacing: 1.5px;
     line-height: 20px;
 }
@@ -1875,7 +1812,6 @@ display:block;
     width: 100%;
     padding: 15px;
     font-size: 1.7rem;
-    color:#fff;
     text-transform: none;
     background:transparent;
     position: relative;
@@ -1885,8 +1821,8 @@ display:block;
 }
 /*----------------------------------------------------Footer section start--------------------------------------*/
 .footer-section {
-    background: url(../images/special-offer.jpg);
-    background-position: center;
+    background: url(../images/bg-footer\ .jpg);
+    background-position: center;    
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -1905,7 +1841,6 @@ display:block;
     display: inline-block;
   }
   .cta-text h4 {
-    color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 2px;
@@ -1935,11 +1870,9 @@ display:block;
   .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-        color: #aaaaaa;
     line-height: 28px;
   }
   .footer-social-icon span {
-    color: #fff;
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -1947,7 +1880,6 @@ display:block;
     margin-bottom: 20px;
   }
   .footer-social-icon a {
-    color: #fff;
     font-size: 16px;
     margin-right: 15px;
   }
@@ -2005,7 +1937,6 @@ display:block;
     padding: 14px 28px;
     background: #2E2E2E;
     border: 1px solid #2E2E2E;
-    color: #fff;
   }
   .subscribe-form button {
       position: absolute;
@@ -2016,7 +1947,6 @@ display:block;
       top: 0;
   }
   .subscribe-form button i {
-    color: #fff;
     font-size: 22px;
     transform: rotate(-6deg);
   }
@@ -2027,7 +1957,6 @@ display:block;
   .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #aaaaaa;
   }
   .copyright-text p a{
     color: #CA8E46;
@@ -2075,15 +2004,15 @@ display:block;
     margin: 0 0 20px 0;
   }
   .album #i9rb {
-    color: black;
+    color: #000;
   }
   
   .album #ir6i {
-    color: black;
+    color: #000;
   }
   
   .album #ikz3b {
-    color: black;
+    color: #000;
   }
   
   .album .responsive-container-block.img-cont {
@@ -2102,23 +2031,23 @@ display:block;
     transform: scale(1.2);
   }
   .album #ipix {
-    color: black;
+    color: #000;
   }
   
   .album #ipzoh {
-    color: black;
+    color: #000;
   }
   
   .album #ig5q8 {
-    color: black;
+    color: #000;
   }
   
   .album #imtzl {
-    color: black;
+    color: #000;
   }
   
   .album #i53es {
-    color: black;
+    color: #000;
   }
   
   .album .img.img-big {
@@ -2126,55 +2055,6 @@ display:block;
     margin: 0 0 16px 0;
   }
   
-  @media (max-width: 1024px) {
-    .album .img {
-      margin: 0 0 18px 0;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .album .img {
-      max-width: 32.5%;
-      margin: 0 0 0 0;
-    }
-  
-    .album .responsive-container-block.bg {
-      flex-direction: column;
-    }
-  
-    .album .responsive-container-block.img-cont {
-      max-width: 100%;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .album .img.img-big {
-      max-width: 49%;
-      margin: 0 0 0 0;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .album .img {
-      max-width: 94%;
-      margin: 0 0 25px 0;
-    }
-  
-    .album .responsive-container-block.img-cont {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 10px 10px 10px;
-    }
-  
-    .album .img.img-big {
-      max-width: 94%;
-      margin: 0 0 25px 0;
-    }
-  
-    .album .img.img-last {
-      margin: 0 0 5px 0;
-    }
-  }
 
 
 
