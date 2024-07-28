@@ -2,7 +2,6 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display = "none";
 })
-
 $(document).ready(function(){
    $('.according-content').hide();
    $('#according-button-1').on('click', () =>{
@@ -157,8 +156,6 @@ $(document).ready(function(){
    });
 });
 
-
-
 /*-- Counter Up Section --*/
 $(document).ready(function(){
    if ($(".counter").length > 0) {
@@ -176,8 +173,6 @@ $('.button-group-wrap').on('click', 'li', function(){
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
-
-
 
 $(document).ready(function() {
   $(".vertical-center").slick({
