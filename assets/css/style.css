@@ -751,7 +751,7 @@ Secondary text-color: #aaaaaa*/
     text-align: center;
   }
   .special-day img {
-    width: 500px;
+    width: 400px;
     animation: special-animate 10s ease-in-out forwards infinite;
   }
   @keyframes special-animate{
@@ -759,7 +759,7 @@ Secondary text-color: #aaaaaa*/
       transform: rotate(0deg);
     }
     50%{
-      transform: rotate(180deg) scale(1.2);
+      transform: rotate(180deg) scale(1);
     }
     100%{
       transform: rotate(360deg);
