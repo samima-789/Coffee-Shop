@@ -32,6 +32,12 @@
 }
 
 @media (max-width: 768px){
+	.hero-slide .hero-item:nth-child(3),
+	.hero-slide .hero-item:nth-child(4),
+	.hero-slide .hero-item:nth-child(5),
+	.hero-slide .hero-item:nth-child(6){
+       left: 100%;
+	}
 	.slider-images{
         gap: 10px;
     }
