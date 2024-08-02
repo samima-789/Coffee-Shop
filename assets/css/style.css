@@ -290,6 +290,19 @@ Secondary text-color: #aaaaaa*/
     font-size: 14px;
     letter-spacing: 1px;
   }
+  .coffee-cup{
+    margin-bottom: 10px;
+    animation: header-animate 5s linear infinite;
+    transition: 5s;
+  }
+  @keyframes header-animate{
+    50%{
+      transform: translateY(10px) scale(1.1);
+    }
+    100%{
+      transform: translateY(0px) scale(1);
+    }
+  }
   /*-- 2.7 - Content part --*/
   #content {
     max-width: 550px;
@@ -675,7 +688,7 @@ Secondary text-color: #aaaaaa*/
     font-weight: 700;
     color: #ca8e46;
     text-transform: uppercase;
-    animation: hero-animate 1s ease-in-out 1 forwards;
+    animation: hero-animate 1s ease-in-out 1 forwards infinite;
   }
   .hero-content p {
     letter-spacing: 1px;
@@ -957,6 +970,18 @@ Secondary text-color: #aaaaaa*/
   .location-section i {
     font-size: 20px;
     color: #ca8e46;
+    animation: location-animate 8s linear infinite;
+  }
+  @keyframes location-animate{
+    25%{
+      transform: scale(1.1);
+    }
+    50%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1.1);
+    }
   }
   .location-section h4 {
     margin-top: 5px;
@@ -1377,12 +1402,21 @@ Secondary text-color: #aaaaaa*/
   .counter-content .counter-box {
     width: calc(25% - 30px);
     border-radius: 5px;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 50%;
+    border: 1px dashed #eeeeee;
+  }
+  .counter-content .counter-box:nth-child(2),
+  .counter-content .counter-box:nth-child(4){
+    margin-top: 100px;
+  }
+  .counter-content .counter-box:nth-child(1),
+  .counter-content .counter-box:nth-child(3){
+    margin-top: -100px;
   }
   .counter-content .counter-box .icon {
     width: 60px;
